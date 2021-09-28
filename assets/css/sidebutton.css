@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+.popup {
+	margin: 30px auto;
+	padding: 15px;
+	border-radius: 5px;
+	width: 49%;
+	position: absolute;
+	left: 35%;
+	/* transition: all 5s ease-in-out; */
+}
+.popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+	position: absolute;
+	top: 35px;
+	left: 25px;
+	background: #00495d;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	padding: 0px 5px;
+}
+.search {
+	position: absolute;
+	top: 19px;
+	left: 45%;
+	/* background: #ce00ff; */
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+	padding: 0px 5px;
+}
+
+.popup .close:hover {
+	color: #ffffff;
+}
+.popup .content {/*	max-height: 30%;
+*/overflow: auto;border-top: 2px dashed #d1d6d8;margin-top: 16px;}
+.div1 {
+	width: 50%;
+	padding: 20px;
+	/* float: left; */
+	height: auto;
+	background:#fff;
+	border-radius: 25px;
+}
+
+
+.content h3 { text-align: center;
+    margin: 15px 0 -1px 0;
+    text-transform: uppercase;
+    color: #00495d;
+}
+@media screen and (max-width: 1024px) {
+.box {
+	width: 70%;
+}
+.popup {
+	width: 70%;
+	left:20%;
+}
+.div1 {
+	width: 70%;
+	padding: 20px;
+	float: left;
+}
+
+}
+
+/* sticky button */	
+	
+#feedback1 {
+    height: 0px;
+    width: 85px;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 1000;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#feedback1 a {
+	display: block;
+	background:url(pc.png) no-repeat;
+	height: 52px;
+	width: 155px;	
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+#feedback1 a:hover {
+	background:url(pc-over.png) no-repeat;
+}
+
+#feedback {
+	height: 0px;
+	width: 85px;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	z-index: 1000;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#feedback a {
+	display: block;
+	background:#000;
+	height: 52px;
+	padding-top: 10px;
+	width: 155px;
+	text-align: center;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#feedback a:hover {
+	background:#00495d;
+}
+
+/* enquiry form */	
+		
+#quickenquire input[type=text], input[type=email], textarea, select {
+	width: 100%;
+	padding: 5px 15px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+#quickenquire label {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px!important;
+	margin: 0px!important;
+}
+#quickenquire  input[type=submit] {
+    width: 100%;
+    background-color: #00495d;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#quickenquire  input[type=submit]:hover {
+    background-color: #000000;
+}
