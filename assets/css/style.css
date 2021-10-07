@@ -334,6 +334,8 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: 0px;
     margin-top: 5px!important;
 }
+.navbar{position:absolute !important;}
+.navbar-mobile{top: -210px!important;}
 }
 
 @-webkit-keyframes up-down {
@@ -677,7 +679,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  /*border: 2px solid #82909c;*/
+ /*border: 2px solid #82909c;*/
 }
 
 /* ---- END STAND ALONE RESUME ITEM ---- */
@@ -1250,3 +1252,4 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
