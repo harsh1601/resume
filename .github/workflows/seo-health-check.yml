@@ -1,0 +1,25 @@
+name: SEO health check
+
+on:
+  schedule:
+    - cron: "30 3 * * 1"
+  workflow_dispatch:
+
+jobs:
+  validate-site-signals:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check live page metadata
+        run: |
+          set -euo pipefail
+          curl -fsSL https://agrharsh.com/ -o index.html
+          grep -q '<title>Harsh Agarwal | Digital Public Infrastructure &amp; e-Governance Architect</title>' index.html
+          grep -q '<link rel="canonical" href="https://agrharsh.com/">' index.html
+          grep -q '<script type="application/ld+json">' index.html
+          grep -q 'Digital Public Infrastructure' index.html
+
+      - name: Check crawl files
+        run: |
+          set -euo pipefail
+          curl -fsSL https://agrharsh.com/robots.txt | grep -q 'Sitemap: https://agrharsh.com/sitemap.xml'
+          curl -fsSL https://agrharsh.com/sitemap.xml | grep -q '<loc>https://agrharsh.com/</loc>'
