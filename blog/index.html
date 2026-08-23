@@ -29,10 +29,12 @@
   <meta property="og:description" content="Articles on digital public infrastructure, e-governance, enterprise architecture, GST systems, and technology leadership.">
   <meta property="og:url" content="https://agrharsh.com/blog/">
   <meta property="og:image" content="https://agrharsh.com/assets/img/me.jpeg">
+  <meta property="og:image:alt" content="Harsh Agarwal, technology executive and enterprise architect">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Blog | Harsh Agarwal">
   <meta name="twitter:description" content="Articles on digital public infrastructure, e-governance, enterprise architecture, GST systems, and technology leadership.">
   <meta name="twitter:image" content="https://agrharsh.com/assets/img/me.jpeg">
+  <meta name="twitter:image:alt" content="Harsh Agarwal, technology executive and enterprise architect">
 
   <link href="../assets/img/favicon.ico" rel="icon">
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -49,22 +51,64 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Blog",
-      "@id": "https://agrharsh.com/blog/#blog",
-      "url": "https://agrharsh.com/blog/",
-      "name": "Harsh Agarwal Blog",
-      "description": "Articles by Harsh Agarwal on digital public infrastructure, e-governance, enterprise architecture, GST systems, and technology leadership.",
-      "inLanguage": "en-IN",
-      "author": {
-        "@type": "Person",
-        "name": "Harsh Agarwal",
-        "url": "https://agrharsh.com/"
-      },
-      "publisher": {
-        "@type": "Person",
-        "name": "Harsh Agarwal",
-        "url": "https://agrharsh.com/"
-      }
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://agrharsh.com/blog/#webpage",
+          "url": "https://agrharsh.com/blog/",
+          "name": "Blog | Harsh Agarwal",
+          "description": "Articles by Harsh Agarwal on digital public infrastructure, e-governance, enterprise architecture, GST systems, and technology leadership.",
+          "dateModified": "2026-08-24",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://agrharsh.com/#website"
+          },
+          "mainEntity": {
+            "@id": "https://agrharsh.com/blog/#blog"
+          },
+          "breadcrumb": {
+            "@id": "https://agrharsh.com/blog/#breadcrumb"
+          }
+        },
+        {
+          "@type": "Blog",
+          "@id": "https://agrharsh.com/blog/#blog",
+          "url": "https://agrharsh.com/blog/",
+          "name": "Harsh Agarwal Blog",
+          "description": "Articles by Harsh Agarwal on digital public infrastructure, e-governance, enterprise architecture, GST systems, and technology leadership.",
+          "inLanguage": "en-IN",
+          "author": {
+            "@type": "Person",
+            "@id": "https://agrharsh.com/#person",
+            "name": "Harsh Agarwal",
+            "url": "https://agrharsh.com/"
+          },
+          "publisher": {
+            "@type": "Person",
+            "@id": "https://agrharsh.com/#person",
+            "name": "Harsh Agarwal",
+            "url": "https://agrharsh.com/"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://agrharsh.com/blog/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://agrharsh.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://agrharsh.com/blog/"
+            }
+          ]
+        }
+      ]
     }
   </script>
 </head>
@@ -101,8 +145,24 @@
           <h2>Latest Articles</h2>
         </div>
 
-        <div id="blog-post-list" class="blog-post-list" aria-live="polite">
-          <p class="blog-empty">Loading articles...</p>
+        <div class="blog-post-list" aria-label="Article list">
+          <p class="blog-empty">Articles will appear here once the first published drafts are added.</p>
+          <!--
+            Add article cards newest-first. Example:
+
+            <article class="blog-post-card">
+              <time datetime="2026-09-01">1 September 2026</time>
+              <h3><a href="articles/article-slug.html">Article Title</a></h3>
+              <p>A short two-line summary that appears on the blog index.</p>
+              <div class="blog-post-meta">
+                <div class="blog-tags">
+                  <span>Digital Public Infrastructure</span>
+                  <span>Architecture</span>
+                </div>
+                <a class="blog-read-more" href="articles/article-slug.html" aria-label="Read Article Title">Read article <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          -->
         </div>
       </div>
     </section>
@@ -112,59 +172,6 @@
 
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/main.js"></script>
-  <script>
-    (function() {
-      const list = document.getElementById('blog-post-list');
-      const dateFormatter = new Intl.DateTimeFormat('en-IN', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric'
-      });
-
-      const renderEmpty = () => {
-        list.innerHTML = '<p class="blog-empty">Articles will appear here once the first published drafts are added.</p>';
-      };
-
-      const renderPosts = (posts) => {
-        const publishedPosts = posts
-          .filter((post) => post.status !== 'draft')
-          .sort((a, b) => new Date(b.date) - new Date(a.date));
-
-        if (!publishedPosts.length) {
-          renderEmpty();
-          return;
-        }
-
-        list.innerHTML = publishedPosts.map((post) => {
-          const url = new URL(post.url, window.location.href);
-          const date = dateFormatter.format(new Date(post.date));
-          const tags = (post.tags || []).map((tag) => `<span>${tag}</span>`).join('');
-
-          return `
-            <article class="blog-post-card">
-              <time datetime="${post.date}">${date}</time>
-              <h3><a href="${url.pathname}">${post.title}</a></h3>
-              <p>${post.summary}</p>
-              <div class="blog-post-meta">
-                <div class="blog-tags">${tags}</div>
-                <a class="blog-read-more" href="${url.pathname}" aria-label="Read ${post.title}">Read article <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </article>
-          `;
-        }).join('');
-      };
-
-      fetch('articles/articles.json')
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Unable to load article metadata');
-          }
-          return response.json();
-        })
-        .then(renderPosts)
-        .catch(renderEmpty);
-    })();
-  </script>
 </body>
 
 </html>

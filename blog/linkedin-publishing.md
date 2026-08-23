@@ -12,7 +12,7 @@ For each website article, prepare an abridged LinkedIn version and link readers 
 
 ## Suggested Tracking Link
 
-Use a LinkedIn-specific URL when you want analytics attribution:
+Use a LinkedIn-specific URL when you want analytics attribution. This is optional; the plain article URL works without it. GitHub Pages will serve the same static HTML page even when these query attributes are present:
 
 `https://agrharsh.com/blog/articles/<article-slug>.html?utm_source=linkedin&utm_medium=social&utm_campaign=blog`
 
