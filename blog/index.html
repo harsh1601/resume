@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFSNNCBM1D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HFSNNCBM1D');
+  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Blog | Harsh Agarwal</title>
+  <meta name="description" content="Articles by Harsh Agarwal on digital public infrastructure, e-governance, enterprise architecture, GST systems, and technology leadership.">
+  <meta name="keywords" content="Harsh Agarwal blog, digital public infrastructure, e-governance, enterprise architecture, GST architecture, technology leadership">
+  <meta name="author" content="Harsh Agarwal">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#191c1f">
+  <link rel="canonical" href="https://agrharsh.com/blog/">
+  <link rel="sitemap" type="application/xml" href="https://agrharsh.com/sitemap.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Harsh Agarwal">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Blog | Harsh Agarwal">
+  <meta property="og:description" content="Articles on digital public infrastructure, e-governance, enterprise architecture, GST systems, and technology leadership.">
+  <meta property="og:url" content="https://agrharsh.com/blog/">
+  <meta property="og:image" content="https://agrharsh.com/assets/img/me.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog | Harsh Agarwal">
+  <meta name="twitter:description" content="Articles on digital public infrastructure, e-governance, enterprise architecture, GST systems, and technology leadership.">
+  <meta name="twitter:image" content="https://agrharsh.com/assets/img/me.jpeg">
+
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "@id": "https://agrharsh.com/blog/#blog",
+      "url": "https://agrharsh.com/blog/",
+      "name": "Harsh Agarwal Blog",
+      "description": "Articles by Harsh Agarwal on digital public infrastructure, e-governance, enterprise architecture, GST systems, and technology leadership.",
+      "inLanguage": "en-IN",
+      "author": {
+        "@type": "Person",
+        "name": "Harsh Agarwal",
+        "url": "https://agrharsh.com/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Harsh Agarwal",
+        "url": "https://agrharsh.com/"
+      }
+    }
+  </script>
+</head>
+
+<body class="blog-page">
+
+  <header id="header" class="fixed-bottom d-flex justify-content-center align-items-center header-scrolled">
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="bi bi-bank2 nav-link" title="Home" href="../">Home</a></li>
+        <li><a class="bi bi-stack nav-link" title="Resume" href="../#resume">Resume</a></li>
+        <li><a class="bi bi-journal-text nav-link active" title="Blog" href="./">Blog</a></li>
+        <li><a class="bi bi-chat-text-fill nav-link" title="Contact Details" href="../#contact">Contact</a></li>
+        <li><a class="bi bi-linkedin nav-link" title="LinkedIn Profile" style="color: #ffb459;" href="https://www.linkedin.com/in/agrharsh" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a class="bi bi-cloud-download-fill nav-link" style="color: #ffb459;" href="../assets/Harsh_Agarwal.pdf" title="Resume Download" download>Download CV</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="blog-hero">
+      <div class="container">
+        <p class="blog-eyebrow">Articles</p>
+        <h1>Digital Public Infrastructure, e-Governance and Architecture</h1>
+        <p class="blog-intro">Notes and essays on building citizen-scale platforms, aligning policy and technology, and leading complex digital transformation programs.</p>
+      </div>
+    </section>
+
+    <section class="blog-list-section">
+      <div class="container">
+        <div class="section-title">
+          <span>Blog</span>
+          <h2>Latest Articles</h2>
+        </div>
+
+        <div id="blog-post-list" class="blog-post-list" aria-live="polite">
+          <p class="blog-empty">Loading articles...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    (function() {
+      const list = document.getElementById('blog-post-list');
+      const dateFormatter = new Intl.DateTimeFormat('en-IN', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+      });
+
+      const renderEmpty = () => {
+        list.innerHTML = '<p class="blog-empty">Articles will appear here once the first published drafts are added.</p>';
+      };
+
+      const renderPosts = (posts) => {
+        const publishedPosts = posts
+          .filter((post) => post.status !== 'draft')
+          .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        if (!publishedPosts.length) {
+          renderEmpty();
+          return;
+        }
+
+        list.innerHTML = publishedPosts.map((post) => {
+          const url = new URL(post.url, window.location.href);
+          const date = dateFormatter.format(new Date(post.date));
+          const tags = (post.tags || []).map((tag) => `<span>${tag}</span>`).join('');
+
+          return `
+            <article class="blog-post-card">
+              <time datetime="${post.date}">${date}</time>
+              <h3><a href="${url.pathname}">${post.title}</a></h3>
+              <p>${post.summary}</p>
+              <div class="blog-post-meta">
+                <div class="blog-tags">${tags}</div>
+                <a class="blog-read-more" href="${url.pathname}" aria-label="Read ${post.title}">Read article <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          `;
+        }).join('');
+      };
+
+      fetch('articles/articles.json')
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Unable to load article metadata');
+          }
+          return response.json();
+        })
+        .then(renderPosts)
+        .catch(renderEmpty);
+    })();
+  </script>
+</body>
+
+</html>
