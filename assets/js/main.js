@@ -158,4 +158,71 @@
     }
   });
 
+  const showShareStatus = (element, message) => {
+    const shareBar = element.closest('.article-share')
+    if (!shareBar) return
+
+    const status = shareBar.querySelector('.article-share-status')
+    if (!status) return
+
+    status.textContent = message
+    window.setTimeout(() => {
+      status.textContent = ''
+    }, 2200)
+  }
+
+  const copyShareUrl = async (url) => {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(url)
+      return
+    }
+
+    const textArea = document.createElement('textarea')
+    textArea.value = url
+    textArea.setAttribute('readonly', '')
+    textArea.style.position = 'fixed'
+    textArea.style.top = '-9999px'
+    document.body.appendChild(textArea)
+    textArea.select()
+    document.execCommand('copy')
+    document.body.removeChild(textArea)
+  }
+
+  on('click', '[data-copy-link]', async function() {
+    const shareUrl = this.getAttribute('data-share-url') || window.location.href
+
+    try {
+      await copyShareUrl(shareUrl)
+      showShareStatus(this, 'Link copied')
+    } catch (error) {
+      showShareStatus(this, 'Copy failed')
+    }
+  }, true)
+
+  on('click', '[data-native-share]', async function() {
+    const shareUrl = this.getAttribute('data-share-url') || window.location.href
+    const shareTitle = this.getAttribute('data-share-title') || document.title
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          url: shareUrl
+        })
+      } catch (error) {
+        if (error.name !== 'AbortError') {
+          showShareStatus(this, 'Share failed')
+        }
+      }
+      return
+    }
+
+    try {
+      await copyShareUrl(shareUrl)
+      showShareStatus(this, 'Link copied')
+    } catch (error) {
+      showShareStatus(this, 'Share unavailable')
+    }
+  }, true)
+
 })()
