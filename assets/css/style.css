@@ -661,6 +661,112 @@ section {
 /* ---- END STAND ALONE RESUME ITEM ---- */
 
 /*--------------------------------------------------------------
+# Latest Article
+--------------------------------------------------------------*/
+.latest-article {
+  background: #f7f8f9;
+  border-bottom: 1px solid #eef0f2;
+  border-top: 1px solid #eef0f2;
+  padding: 34px 0 52px 0;
+}
+
+.latest-article .section-title {
+  padding: 18px 0 26px 0;
+}
+
+.latest-article-card {
+  background: #fff;
+  border: 1px solid #dde1e4;
+  border-left: 4px solid #ffb727;
+  border-radius: 6px;
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 24px 26px;
+}
+
+.latest-article-meta {
+  align-items: center;
+  color: #687683;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: 700;
+  gap: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.latest-article-meta time {
+  display: inline-block;
+}
+
+.latest-article-meta span {
+  background: #eef0f2;
+  border-radius: 4px;
+  padding: 5px 9px;
+}
+
+.latest-article-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.35;
+  margin: 0 0 12px 0;
+}
+
+.latest-article-card h3 a {
+  color: #3b434a;
+}
+
+.latest-article-card h3 a:hover {
+  color: #ffb727;
+}
+
+.latest-article-card p {
+  color: #5d6a75;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 0 18px 0;
+}
+
+.latest-article-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.latest-article-all {
+  color: #687683;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.latest-article-all:hover {
+  color: #ffb727;
+}
+
+@media (max-width: 768px) {
+  .latest-article {
+    padding: 28px 0 42px 0;
+  }
+
+  .latest-article-card {
+    padding: 22px;
+  }
+
+  .latest-article-card h3 {
+    font-size: 21px;
+  }
+
+  .latest-article-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/*--------------------------------------------------------------
 # My Services
 --------------------------------------------------------------*/
 .services .icon-box {
