@@ -43,6 +43,8 @@
   <meta name="twitter:description" content="What recurring peaks reveal about workload, architecture, capacity and long-term technological change in citizen-scale public platforms.">
   <meta name="twitter:image" content="https://agrharsh.com/assets/img/me.jpeg">
   <meta name="twitter:image:alt" content="Harsh Agarwal, technology executive and enterprise architect">
+  <meta name="twitter:label1" content="Reading time">
+  <meta name="twitter:data1" content="7 min read">
 
   <link href="../../assets/img/favicon.ico" rel="icon">
   <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -54,7 +56,7 @@
   <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../../assets/css/style.css" rel="stylesheet">
+  <link href="../../assets/css/style.css?v=20260824-article-share" rel="stylesheet">
   <style>
     .article-lead {
       color: #3b434a;
@@ -111,6 +113,7 @@
           "description": "What recurring peaks reveal about workload, architecture, capacity and long-term technological change in citizen-scale public platforms.",
           "datePublished": "2026-08-24",
           "dateModified": "2026-08-24",
+          "timeRequired": "PT7M",
           "inLanguage": "en-IN",
           "articleSection": "Digital Public Infrastructure",
           "keywords": [
@@ -207,7 +210,35 @@
           <p class="blog-eyebrow">Digital Public Infrastructure</p>
           <h1>Designing Citizen-Scale Platforms for Continuous Evolution</h1>
           <p class="article-summary">What recurring peaks reveal about workload, architecture, capacity and long-term technological change.</p>
-          <time datetime="2026-08-24">24 August 2026</time>
+          <div class="article-meta-line">
+            <span>Harsh Agarwal</span>
+            <span>7 min read</span>
+            <time datetime="2026-08-24">24 August 2026</time>
+          </div>
+          <div class="article-share" aria-label="Share this article">
+            <span class="article-share-label">Share</span>
+            <button class="article-share-action" type="button" data-native-share data-share-title="Designing Citizen-Scale Platforms for Continuous Evolution" data-share-url="https://agrharsh.com/blog/articles/designing-citizen-scale-platforms-for-continuous-evolution.html">
+              <i class="bi bi-share" aria-hidden="true"></i>
+              <span>Apps</span>
+            </button>
+            <button class="article-share-action" type="button" data-copy-link data-share-url="https://agrharsh.com/blog/articles/designing-citizen-scale-platforms-for-continuous-evolution.html">
+              <i class="bi bi-link-45deg" aria-hidden="true"></i>
+              <span>Copy link</span>
+            </button>
+            <a class="article-share-action" href="https://wa.me/?text=Designing%20Citizen-Scale%20Platforms%20for%20Continuous%20Evolution%20-%20https%3A%2F%2Fagrharsh.com%2Fblog%2Farticles%2Fdesigning-citizen-scale-platforms-for-continuous-evolution.html" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              <span>WhatsApp</span>
+            </a>
+            <a class="article-share-action" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fagrharsh.com%2Fblog%2Farticles%2Fdesigning-citizen-scale-platforms-for-continuous-evolution.html" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a class="article-share-action" href="mailto:?subject=Designing%20Citizen-Scale%20Platforms%20for%20Continuous%20Evolution&body=Sharing%20this%20article%3A%20https%3A%2F%2Fagrharsh.com%2Fblog%2Farticles%2Fdesigning-citizen-scale-platforms-for-continuous-evolution.html">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              <span>Email</span>
+            </a>
+            <span class="article-share-status" aria-live="polite"></span>
+          </div>
         </header>
 
         <div class="article-content">
@@ -219,6 +250,8 @@
 
           <p>This article examines the architectural rigour demanded by these platforms and the design principles required to sustain them.</p>
 
+          <hr class="article-section-divider">
+
           <h2>A Peak Has a Shape, Not Just a Size</h2>
           <p>A peak has an arrival pattern, duration and transaction mix. It may build gradually or appear suddenly, involve many lightweight requests or fewer data-intensive operations, and demand either immediate responses or completion within a prescribed window.</p>
 
@@ -229,6 +262,8 @@
           <p>Demand can also amplify itself. Users may retry when responses slow, and connected systems may do the same after timeouts. Without suitable throttling and retry behaviour, a local slowdown can return as additional ecosystem load.</p>
 
           <p>Even an accurate model of today's peak begins to age as the platform changes.</p>
+
+          <hr class="article-section-divider">
 
           <h2>The Same Peak Meets a Different Platform</h2>
           <p>Citizen-scale public platforms may operate for decades at a stretch until the next major reform. Law, policy, administrative requirements and citizen expectations continue to shape them, often within prescribed timelines and without interrupting service. Unlike a product with a largely discretionary roadmap, a public platform must absorb changes that cannot wait for an architecturally convenient moment.</p>
@@ -243,12 +278,16 @@
 
           <p>Functional evolution and technical ageing alter the path every transaction travels. Scale must therefore be examined across the complete architecture.</p>
 
+          <hr class="article-section-divider">
+
           <h2>Scale Lives Across the Complete Journey</h2>
           <p>Capacity is often discussed as an infrastructure quantity. In practice, it emerges from application design, data architecture, integrations, shared services and operational controls. A query becomes costlier as data grows; a synchronous external call can hold up an entire journey; and a stateful component may scale differently from a stateless service even when both have spare compute.</p>
 
           <p>Caching, asynchronous processing and queues can improve performance and resilience, but each adds a design boundary. Caches require consistency; queues can accumulate work; retries can aid recovery or multiply demand. Additional infrastructure helps when infrastructure is the constraint. It cannot remove an inefficient transaction path, an expensive data operation or a dependency that does not scale.</p>
 
           <p>As these behaviours change across releases, architectural judgement needs consistent evidence rather than recollection.</p>
+
+          <hr class="article-section-divider">
 
           <h2>Benchmarks Turn Experience into Architectural Memory</h2>
           <p>The original architecture embodies assumptions about users, transactions, integrations, data and growth. Performance benchmarks make those assumptions measurable. Interactive journeys need response-time, throughput, error and resource measures. Internal processing needs completion, queue and recovery measures. API journeys must also represent external response times, timeouts and retries.</p>
@@ -259,6 +298,8 @@
 
           <p>Measurable behaviour allows capacity planning to model how real work crosses the platform.</p>
 
+          <hr class="article-section-divider">
+
           <h2>Capacity Follows the Workload</h2>
           <p>Capacity planning becomes clearer when it begins with a business journey rather than an infrastructure number. A filing transaction may cross portal or API entry, authentication, validation, application and database processing, messaging, external systems, acknowledgement and recovery. Its usable capacity is governed by the stage that reaches its limit first, not spare capacity elsewhere.</p>
 
@@ -268,10 +309,14 @@
 
           <p>Readiness costs appear differently: advance physical capacity on premises; baseline capacity, resilience and burst consumption in cloud. Neither model creates scalability independently; each operates the application and data architecture under its expected workload.</p>
 
+          <hr class="article-section-divider">
+
           <h2>When Capacity Is Not the Only Answer</h2>
           <p>Capacity cannot indefinitely compensate for structurally expensive assumptions. Queries can be tuned, transaction paths simplified, data access improved, workloads redistributed and constrained components refactored. These changes can extend an architecture's useful life. Eventually, repeated functional changes may accumulate around assumptions that no longer fit, making each new change harder to understand, test and operate.</p>
 
           <p>Rewriting is not automatically the answer. It brings regression risk, data migration, coexistence and operational transition, and may discard behaviour refined through real-world exceptions. The choice may lie among optimization, targeted refactoring, decomposition, selective replacement or broader redesign. Performance trends, operational history, supportability and future workload indicate when each response is appropriate.</p>
+
+          <hr class="article-section-divider">
 
           <h2>Scale Is Sustained, Not Installed</h2>
           <p>A peak period is more than an event that a platform passes or fails. It is a recurring point at which assumptions about workloads, application design, data, integrations, infrastructure and operations become visible under real conditions.</p>
@@ -307,7 +352,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/main.js?v=20260824-article-share"></script>
 </body>
 
 </html>
