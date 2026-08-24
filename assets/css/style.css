@@ -1095,7 +1095,7 @@ section {
 }
 
 .blog-post-card time,
-.article-header time {
+.article-meta-line time {
   color: #687683;
   display: block;
   font-size: 14px;
@@ -1208,9 +1208,107 @@ section {
   max-width: 820px;
 }
 
-.article-header time {
+.article-meta-line {
+  align-items: center;
   color: #687683;
-  margin: 20px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.article-meta-line > * {
+  align-items: center;
+  display: inline-flex;
+  margin: 0;
+}
+
+.article-meta-line > * + *::before {
+  background: #b7c0c8;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 4px;
+  margin-right: 10px;
+  width: 4px;
+}
+
+.article-share {
+  align-items: center;
+  border-top: 1px solid #eef0f2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 18px;
+}
+
+.article-share-label {
+  color: #687683;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 2px;
+  text-transform: uppercase;
+}
+
+.article-share-action {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dde1e4;
+  border-radius: 999px;
+  color: #4f5d67;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 7px;
+  line-height: 1;
+  min-height: 38px;
+  padding: 10px 14px;
+}
+
+button.article-share-action {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+
+.article-share-action:hover,
+.article-share-action:focus {
+  border-color: #ffb727;
+  color: #3b434a;
+}
+
+.article-share-action i {
+  color: #ffb727;
+  font-size: 16px;
+}
+
+.article-share-status {
+  color: #687683;
+  font-size: 13px;
+  min-height: 18px;
+}
+
+.article-section-divider {
+  border: 0;
+  color: #3b434a;
+  height: 28px;
+  margin: 44px auto 34px auto;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  width: 120px;
+}
+
+.article-section-divider::before {
+  content: "\2022   \2022   \2022";
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 12px;
+  line-height: 28px;
 }
 
 .article-content {
@@ -1256,6 +1354,11 @@ section {
     padding-bottom: 24px;
   }
 
+  .article-meta-line,
+  .article-share {
+    align-items: flex-start;
+  }
+
   .blog-post-meta {
     align-items: flex-start;
     flex-direction: column;
@@ -1263,5 +1366,10 @@ section {
 
   .article-content {
     font-size: 16px;
+  }
+
+  .article-share-action {
+    min-height: 36px;
+    padding: 9px 12px;
   }
 }
