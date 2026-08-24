@@ -158,6 +158,18 @@
     }
   });
 
+  const closeShareMenus = (exceptShare) => {
+    select('.article-share.is-open', true).forEach(share => {
+      if (share === exceptShare) return
+
+      share.classList.remove('is-open')
+      const toggle = share.querySelector('[data-share-toggle]')
+      if (toggle) {
+        toggle.setAttribute('aria-expanded', 'false')
+      }
+    })
+  }
+
   const showShareStatus = (element, message) => {
     const shareBar = element.closest('.article-share')
     if (!shareBar) return
@@ -187,6 +199,19 @@
     document.execCommand('copy')
     document.body.removeChild(textArea)
   }
+
+  on('click', '[data-share-toggle]', function(event) {
+    event.preventDefault()
+    event.stopPropagation()
+
+    const shareBar = this.closest('.article-share')
+    if (!shareBar) return
+
+    const shouldOpen = !shareBar.classList.contains('is-open')
+    closeShareMenus(shareBar)
+    shareBar.classList.toggle('is-open', shouldOpen)
+    this.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false')
+  }, true)
 
   on('click', '[data-copy-link]', async function() {
     const shareUrl = this.getAttribute('data-share-url') || window.location.href
@@ -224,5 +249,17 @@
       showShareStatus(this, 'Share unavailable')
     }
   }, true)
+
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.article-share')) {
+      closeShareMenus()
+    }
+  })
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      closeShareMenus()
+    }
+  })
 
 })()
