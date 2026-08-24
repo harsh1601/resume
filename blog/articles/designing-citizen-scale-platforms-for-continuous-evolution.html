@@ -56,7 +56,7 @@
   <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../../assets/css/style.css?v=20260824-article-share" rel="stylesheet">
+  <link href="../../assets/css/style.css?v=20260824-share-menu" rel="stylesheet">
   <style>
     .article-lead {
       color: #3b434a;
@@ -210,34 +210,40 @@
           <p class="blog-eyebrow">Digital Public Infrastructure</p>
           <h1>Designing Citizen-Scale Platforms for Continuous Evolution</h1>
           <p class="article-summary">What recurring peaks reveal about workload, architecture, capacity and long-term technological change.</p>
-          <div class="article-meta-line">
-            <span>Harsh Agarwal</span>
-            <span>7 min read</span>
-            <time datetime="2026-08-24">24 August 2026</time>
-          </div>
-          <div class="article-share" aria-label="Share this article">
-            <span class="article-share-label">Share</span>
-            <button class="article-share-action" type="button" data-native-share data-share-title="Designing Citizen-Scale Platforms for Continuous Evolution" data-share-url="https://agrharsh.com/blog/articles/designing-citizen-scale-platforms-for-continuous-evolution.html">
-              <i class="bi bi-share" aria-hidden="true"></i>
-              <span>Apps</span>
-            </button>
-            <button class="article-share-action" type="button" data-copy-link data-share-url="https://agrharsh.com/blog/articles/designing-citizen-scale-platforms-for-continuous-evolution.html">
-              <i class="bi bi-link-45deg" aria-hidden="true"></i>
-              <span>Copy link</span>
-            </button>
-            <a class="article-share-action" href="https://wa.me/?text=Designing%20Citizen-Scale%20Platforms%20for%20Continuous%20Evolution%20-%20https%3A%2F%2Fagrharsh.com%2Fblog%2Farticles%2Fdesigning-citizen-scale-platforms-for-continuous-evolution.html" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-whatsapp" aria-hidden="true"></i>
-              <span>WhatsApp</span>
-            </a>
-            <a class="article-share-action" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fagrharsh.com%2Fblog%2Farticles%2Fdesigning-citizen-scale-platforms-for-continuous-evolution.html" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-linkedin" aria-hidden="true"></i>
-              <span>LinkedIn</span>
-            </a>
-            <a class="article-share-action" href="mailto:?subject=Designing%20Citizen-Scale%20Platforms%20for%20Continuous%20Evolution&body=Sharing%20this%20article%3A%20https%3A%2F%2Fagrharsh.com%2Fblog%2Farticles%2Fdesigning-citizen-scale-platforms-for-continuous-evolution.html">
-              <i class="bi bi-envelope" aria-hidden="true"></i>
-              <span>Email</span>
-            </a>
-            <span class="article-share-status" aria-live="polite"></span>
+          <div class="article-meta-bar">
+            <div class="article-meta-line">
+              <span>7 min read</span>
+              <time datetime="2026-08-24">24 August 2026</time>
+            </div>
+            <div class="article-share" aria-label="Share this article">
+              <button class="article-share-toggle" type="button" data-share-toggle aria-expanded="false" aria-controls="article-share-menu" title="Share">
+                <i class="bi bi-share" aria-hidden="true"></i>
+                <span class="visually-hidden">Share</span>
+              </button>
+              <div class="article-share-menu" id="article-share-menu" role="menu" aria-label="Share options">
+                <button class="article-share-menu-item" type="button" role="menuitem" data-copy-link data-share-url="https://agrharsh.com/blog/articles/designing-citizen-scale-platforms-for-continuous-evolution.html">
+                  <i class="bi bi-link-45deg" aria-hidden="true"></i>
+                  <span>Copy link</span>
+                </button>
+                <a class="article-share-menu-item" role="menuitem" href="https://wa.me/?text=Designing%20Citizen-Scale%20Platforms%20for%20Continuous%20Evolution%20-%20https%3A%2F%2Fagrharsh.com%2Fblog%2Farticles%2Fdesigning-citizen-scale-platforms-for-continuous-evolution.html" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                  <span>WhatsApp</span>
+                </a>
+                <a class="article-share-menu-item" role="menuitem" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fagrharsh.com%2Fblog%2Farticles%2Fdesigning-citizen-scale-platforms-for-continuous-evolution.html" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin" aria-hidden="true"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a class="article-share-menu-item" role="menuitem" href="mailto:?subject=Designing%20Citizen-Scale%20Platforms%20for%20Continuous%20Evolution&body=Sharing%20this%20article%3A%20https%3A%2F%2Fagrharsh.com%2Fblog%2Farticles%2Fdesigning-citizen-scale-platforms-for-continuous-evolution.html">
+                  <i class="bi bi-envelope" aria-hidden="true"></i>
+                  <span>Email</span>
+                </a>
+                <button class="article-share-menu-item" type="button" role="menuitem" data-native-share data-share-title="Designing Citizen-Scale Platforms for Continuous Evolution" data-share-url="https://agrharsh.com/blog/articles/designing-citizen-scale-platforms-for-continuous-evolution.html">
+                  <i class="bi bi-box-arrow-up" aria-hidden="true"></i>
+                  <span>More apps</span>
+                </button>
+                <span class="article-share-status" aria-live="polite"></span>
+              </div>
+            </div>
           </div>
         </header>
 
@@ -352,7 +358,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/js/main.js?v=20260824-article-share"></script>
+  <script src="../../assets/js/main.js?v=20260824-share-menu"></script>
 </body>
 
 </html>
