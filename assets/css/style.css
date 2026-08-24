@@ -1415,7 +1415,7 @@ button.article-share-menu-item {
   font-size: 18px;
   line-height: 1.85;
   margin: 0 auto;
-  max-width: 820px;
+  max-width: 920px;
 }
 
 .article-content h2 {
@@ -1428,6 +1428,13 @@ button.article-share-menu-item {
 
 .article-content p {
   margin-bottom: 20px;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.article-content .article-return {
+  text-align: left;
 }
 
 @media (max-width: 768px) {
