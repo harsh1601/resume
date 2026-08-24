@@ -1213,6 +1213,7 @@ section {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 20px;
+  min-height: 38px;
 }
 
 .article-meta-line {
@@ -1223,11 +1224,14 @@ section {
   font-size: 14px;
   font-weight: 600;
   gap: 10px;
+  line-height: 1;
+  min-height: 38px;
 }
 
 .article-meta-line > * {
   align-items: center;
   display: inline-flex;
+  line-height: 1;
   margin: 0;
 }
 
@@ -1251,6 +1255,7 @@ section {
 .article-share {
   align-items: center;
   display: inline-flex;
+  height: 38px;
   flex: 0 0 auto;
   position: relative;
   z-index: 5;
@@ -1280,7 +1285,9 @@ section {
 }
 
 .article-share-toggle i {
+  display: block;
   font-size: 21px;
+  line-height: 1;
 }
 
 .article-share:not(.is-open) .article-share-toggle:hover::before,
@@ -1447,7 +1454,7 @@ button.article-share-menu-item {
   }
 
   .article-meta-bar {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .blog-post-meta {
