@@ -1479,3 +1479,13 @@ button.article-share-menu-item {
     right: -4px;
   }
 }
+
+/* Original artwork for the economic interoperability essay. */
+.economic-hero { margin: 0 auto 38px; max-width: 1120px; }
+.economic-hero img, .economic-figure img { display: block; width: 100%; height: auto; }
+.economic-figure { margin: 30px 0; }
+.economic-figure figcaption { color: #5d6a75; font-size: 14px; line-height: 1.6; margin-top: 12px; }
+.article-content .economic-reference { font-size: 15px; overflow-wrap: anywhere; text-align: left; }
+.article-content .economic-context { font-size: 15px; text-align: left; }
+.economic-citation { white-space: nowrap; }
+.economic-reference { scroll-margin-top: 24px; }
