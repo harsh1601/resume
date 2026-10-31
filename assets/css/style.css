@@ -1496,3 +1496,8 @@ button.article-share-menu-item {
 .economic-article .article-header { max-width: 1120px; margin-bottom: 24px; padding-bottom: 18px; }
 .economic-article .economic-hero { width: min(100%, 1120px, calc((100svh - 210px) * 2)); margin: 0 auto; }
 .economic-article .article-meta-bar { justify-content: center; margin-top: 14px; }
+
+.economic-topics { background: #f7f8f9; border-left: 3px solid #ffb727; padding: 16px 20px; margin: 0 0 28px; font-size: 16px; }
+.article-content .economic-topics p { font-weight: 600; margin: 0 0 8px; text-align: left; }
+.economic-topics ul { margin-bottom: 0; padding-left: 20px; }
+.economic-topics li { margin: 4px 0; }
