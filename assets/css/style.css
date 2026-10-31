@@ -1489,3 +1489,10 @@ button.article-share-menu-item {
 .article-content .economic-context { font-size: 15px; text-align: left; }
 .economic-citation { white-space: nowrap; }
 .economic-reference { scroll-margin-top: 24px; }
+
+/* Keep this image-led header visible above the fixed navigation on entry. */
+.economic-article { padding-top: 24px; }
+.economic-article .blog-breadcrumb { margin-bottom: 20px; }
+.economic-article .article-header { max-width: 1120px; margin-bottom: 24px; padding-bottom: 18px; }
+.economic-article .economic-hero { width: min(100%, 1120px, calc((100svh - 210px) * 2)); margin: 0 auto; }
+.economic-article .article-meta-bar { justify-content: center; margin-top: 14px; }
