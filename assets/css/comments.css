@@ -35,3 +35,5 @@
 .comments-float:hover { background: #22272c; color: #ffb727; }
 .comments-float:focus-visible { outline: 3px solid #ffb727; outline-offset: 3px; }
 @media (max-width: 600px) { .comments-float { right: 14px; padding: 12px; } .comments-float span { display: none; } }
+
+.comment-discussion-heading { margin: 36px 0 18px; font-size: 22px; font-weight: 700; color: #3b434a; }
