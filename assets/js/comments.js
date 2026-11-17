@@ -107,7 +107,7 @@
       setStatus(formStatus, 'We could not confirm submission. Please check your connection and try again later.', true);
     } finally {
       submit.disabled = false;
-      submit.textContent = 'Submit for review';
+      submit.textContent = 'Submit';
     }
   });
   load();
