@@ -134,6 +134,7 @@
       ]
     }
   </script>
+  <link href="../../assets/css/comments.css?v=20261117" rel="stylesheet">
 </head>
 
 <body class="blog-page article-page">
@@ -215,6 +216,38 @@
           <h2>Closing Thought</h2>
           <p>Close with the key takeaway and, where useful, a question for readers to consider.</p>
         </div>
+        <section id="comments" class="article-comments" data-blog-comments aria-labelledby="comments-heading">
+          <h2 id="comments-heading">Join the conversation</h2>
+          <p class="comment-intro">What is your perspective? Share a question, an experience or a different view. Comments are reviewed before they appear.</p>
+          <p class="comment-list-status" data-comment-list-status role="status" aria-live="polite">Loading comments…</p>
+          <div data-comment-list aria-label="Reader comments"></div>
+          <button class="comment-secondary" type="button" data-comment-retry hidden>Try again</button>
+          <button class="comment-secondary" type="button" data-comment-more hidden>Load more comments</button>
+          <form class="comment-form">
+            <h3>Leave a comment</h3>
+            <div class="comment-fields">
+              <div class="comment-field">
+                <label for="comment-name">Display name</label>
+                <input id="comment-name" name="name" type="text" autocomplete="nickname" minlength="2" maxlength="80" required>
+              </div>
+
+            </div>
+            <div class="comment-field">
+              <label for="comment-body">Your comment</label>
+              <textarea id="comment-body" name="comment" minlength="10" maxlength="3000" rows="5" aria-describedby="comment-policy" required></textarea>
+              <small>10–3,000 characters. Please keep the discussion respectful and relevant.</small>
+            </div>
+            <div class="comment-trap" aria-hidden="true">
+              <label for="comment-website">Leave this field empty</label>
+              <input id="comment-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <p id="comment-policy" class="comment-privacy">Your chosen display name and comment will be public only after approval. No email address is collected. Please do not include confidential or personal information in your comment.</p>
+            <button class="comment-submit" type="submit">Submit for review</button>
+            <p class="comment-form-status" data-comment-form-status role="status" aria-live="polite"></p>
+          </form>
+          <noscript><p>Please enable JavaScript to read or leave comments. You can also <a href="mailto:agrharsh@gmail.com">email Harsh</a>.</p></noscript>
+        </section>
+
       </div>
     </article>
   </main>
@@ -223,6 +256,8 @@
 
   <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../../assets/js/main.js?v=20260824-share-menu"></script>
+  <script src="../../assets/js/comments-config.js?v=20261117"></script>
+  <script src="../../assets/js/comments.js?v=20261117" defer></script>
 </body>
 
 </html>
