@@ -29,3 +29,9 @@
 .comment-author-reply strong { font-size: 14px; }
 .comment-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 @media (max-width: 600px) { .comment-fields { grid-template-columns: 1fr; gap: 0; } .comment-form { padding: 18px; } .comment-submit { width: 100%; } }
+
+.article-comments { scroll-margin-top: 24px; }
+.comments-float { position: fixed; right: 20px; bottom: calc(92px + env(safe-area-inset-bottom, 0px)); z-index: 995; display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 16px; border-radius: 28px; background: #3b434a; color: #fff; box-shadow: 0 3px 14px rgba(0,0,0,.2); font-size: 14px; font-weight: 600; text-decoration: none; }
+.comments-float:hover { background: #22272c; color: #ffb727; }
+.comments-float:focus-visible { outline: 3px solid #ffb727; outline-offset: 3px; }
+@media (max-width: 600px) { .comments-float { right: 14px; padding: 12px; } .comments-float span { display: none; } }
