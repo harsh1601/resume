@@ -12,7 +12,7 @@
 .hm-home #navbar { position:relative !important; }
 .hm-home #navbar ul { display:flex; flex-wrap:wrap; justify-content:center; }
 .hm-home #navbar a { letter-spacing:0; }
-.hm-menu-toggle { display:none; }
+.hm-menu-toggle, .hm-header-identity { display:none; }
 .hm-home #navbar :is(a, button):focus-visible { outline:2px solid #ffb727; outline-offset:-2px; }
 .hm-home #work, .hm-home #speaking { scroll-margin-top:96px; }
 .hm-home #top { scroll-margin-top:96px; }
@@ -128,6 +128,18 @@
   .hm-grid-4 { grid-template-columns:repeat(2,1fr); }
   .hm-hero h1 { font-size:34px; }
   .hm-home #navbar { width:100%; justify-content:flex-end; padding:0 12px; }
+  .hm-header-identity {
+    display:grid;
+    gap:2px;
+    margin-right:auto;
+    max-width:calc(100% - 56px);
+    visibility:hidden;
+    color:#fff;
+    font-size:16px;
+    line-height:1.2;
+  }
+  .hm-header-identity span { color:#ffb727; font-size:12px; }
+  .hm-home #header.hm-identity-scrolled .hm-header-identity { visibility:visible; }
   .hm-menu-toggle {
     display:grid;
     place-items:center;
