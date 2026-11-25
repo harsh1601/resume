@@ -1,0 +1,95 @@
+/*--------------------------------------------------------------
+# Home & Resume pages (positioning redesign)
+--------------------------------------------------------------*/
+.hm-page { background:#fff; padding-bottom:88px; }
+.hm-page #main { overflow:hidden; }
+.hm-eyebrow { color:#ffb727; font-family:"Raleway",sans-serif; font-size:13px; font-weight:700; letter-spacing:1px; margin-bottom:12px; text-transform:uppercase; }
+
+/* Hero */
+.hm-hero { background:#191c1f; color:#fff; padding:72px 0 64px; }
+.hm-hero .row { align-items:center; }
+.hm-hero h1 { color:#fff; font-size:42px; font-weight:700; line-height:1.2; margin:0 0 18px; }
+.hm-hero .hm-lead { color:rgba(255,255,255,.84); font-size:18px; line-height:1.75; margin:0 0 14px; max-width:720px; }
+.hm-hero .hm-name { font-family:"Raleway",sans-serif; font-size:15px; font-weight:600; color:#fff; letter-spacing:.5px; margin-bottom:6px; }
+.hm-photo { height:auto; width:100%; max-width:300px; aspect-ratio:413/531; object-fit:cover; border-radius:8px; border:3px solid #ffb727; display:block; margin:0 auto; }
+.hm-cta { display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
+.hm-btn { display:inline-block; border-radius:4px; font-family:"Raleway",sans-serif; font-size:14px; font-weight:700; letter-spacing:.5px; padding:12px 22px; text-transform:uppercase; transition:.2s; }
+.hm-btn-primary { background:#ffb727; color:#191c1f; }
+.hm-btn-primary:hover { background:#ffc85a; color:#191c1f; }
+.hm-btn-ghost { border:2px solid rgba(255,255,255,.5); color:#fff; padding:10px 20px; }
+.hm-btn-ghost:hover { border-color:#ffb727; color:#ffb727; }
+.hm-btn-dark { background:#191c1f; color:#fff; }
+.hm-btn-dark:hover { background:#2c3036; color:#fff; }
+
+/* Proof metrics */
+.hm-metrics { background:#fff; border-bottom:1px solid #e6e9eb; }
+.hm-metrics .container { display:grid; grid-template-columns:repeat(4,1fr); gap:0; }
+.hm-metric { padding:28px 20px; border-right:1px solid #e6e9eb; text-align:center; }
+.hm-metric:last-child { border-right:0; }
+.hm-metric strong { display:block; color:#191c1f; font-family:"Raleway",sans-serif; font-size:34px; font-weight:700; line-height:1.1; }
+.hm-metric span { display:block; color:#687683; font-size:14px; margin-top:6px; line-height:1.4; }
+.hm-note { color:#8a949c; font-size:12.5px; text-align:center; margin:0; padding:10px 0 14px; }
+
+/* Sections */
+.hm-section { padding:64px 0; }
+.hm-section.alt { background:#f6f8f9; }
+.hm-section .section-title { padding-bottom:30px; }
+.hm-grid { display:grid; gap:20px; }
+.hm-grid-2 { grid-template-columns:repeat(2,1fr); }
+.hm-grid-4 { grid-template-columns:repeat(4,1fr); }
+.hm-card { background:#fff; border:1px solid #dde1e4; border-radius:6px; padding:24px; height:100%; }
+.hm-card h3 { color:#191c1f; font-size:19px; font-weight:700; margin:0 0 10px; }
+.hm-card p { color:#444; font-size:15px; line-height:1.7; margin:0 0 10px; }
+.hm-card .hm-tag { color:#b37a00; font-family:"Raleway",sans-serif; font-size:12px; font-weight:700; letter-spacing:.8px; text-transform:uppercase; display:block; margin-bottom:8px; }
+.hm-card ul { margin:0; padding-left:18px; color:#444; font-size:14.5px; line-height:1.65; }
+.hm-card .hm-outcome { border-top:1px solid #eceff1; margin-top:12px; padding-top:12px; font-size:14.5px; color:#191c1f; }
+.hm-pillar { border-top:3px solid #ffb727; }
+.hm-more { display:inline-block; margin-top:22px; font-weight:700; font-size:14px; }
+
+/* Speaking */
+.hm-topics { list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+.hm-topics li { background:#fff; border:1px solid #dde1e4; border-left:3px solid #ffb727; border-radius:4px; padding:14px 18px; color:#191c1f; font-size:15.5px; line-height:1.5; }
+.hm-topics li small { display:block; color:#687683; font-size:13.5px; margin-top:2px; }
+.hm-forums { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 18px; padding:0; list-style:none; }
+.hm-forums li { background:#eef1f3; border-radius:3px; color:#414b53; font-size:13px; font-weight:600; padding:5px 10px; }
+
+/* Credentials */
+.hm-creds { display:flex; flex-wrap:wrap; gap:10px; list-style:none; padding:0; margin:0 0 6px; }
+.hm-creds li a, .hm-creds li span { display:block; border:1px solid #dde1e4; border-radius:4px; color:#191c1f; font-size:14px; padding:8px 14px; background:#fff; }
+.hm-creds li a:hover { border-color:#ffb727; }
+
+/* Connect band */
+.hm-connect { background:#191c1f; color:#fff; padding:56px 0; text-align:center; }
+.hm-connect h2 { color:#fff; font-size:30px; margin:0 0 12px; }
+.hm-connect p { color:rgba(255,255,255,.8); max-width:640px; margin:0 auto 22px; line-height:1.7; }
+.hm-connect .hm-cta { justify-content:center; }
+
+/* Resume page */
+.rs-head { background:#191c1f; color:#fff; padding:60px 0 44px; }
+.rs-head h1 { color:#fff; font-size:38px; margin:0 0 8px; }
+.rs-head p { color:rgba(255,255,255,.82); font-size:17px; line-height:1.7; max-width:860px; margin:0; }
+.rs-role { margin-bottom:26px; }
+.rs-role h3 { font-size:19px; font-weight:700; color:#191c1f; margin:0; }
+.rs-role .rs-meta { color:#687683; font-size:14px; margin:2px 0 8px; }
+.rs-role ul { padding-left:18px; margin:0; font-size:15px; line-height:1.7; }
+.rs-side h4 { color:#b37a00; font-size:13px; letter-spacing:.8px; text-transform:uppercase; font-weight:700; margin:22px 0 8px; }
+.rs-side h4:first-child { margin-top:0; }
+.rs-side ul { list-style:none; padding:0; margin:0; font-size:14.5px; line-height:1.65; }
+.rs-side li { margin-bottom:6px; }
+.rs-side li small { color:#687683; display:block; }
+
+@media (max-width:991px) {
+  .hm-grid-4 { grid-template-columns:repeat(2,1fr); }
+  .hm-hero h1 { font-size:34px; }
+}
+@media (max-width:767px) {
+  .hm-metrics .container { grid-template-columns:repeat(2,1fr); }
+  .hm-metric:nth-child(2) { border-right:0; }
+  .hm-metric:nth-child(-n+2) { border-bottom:1px solid #e6e9eb; }
+  .hm-grid-2, .hm-grid-4 { grid-template-columns:1fr; }
+  .hm-hero { padding:48px 0; }
+  .hm-hero h1 { font-size:29px; }
+  .hm-photo { max-width:200px; margin-bottom:28px; }
+  .hm-section { padding:44px 0; }
+  .rs-head h1 { font-size:30px; }
+}
