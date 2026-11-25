@@ -67,7 +67,7 @@
     let header = select('#header')
     let offset = header.offsetHeight
 
-    if (!header.classList.contains('header-scrolled')) {
+    if (!header.classList.contains('header-scrolled') && !header.classList.contains('sticky-top')) {
       offset -= 20
     }
 
@@ -118,6 +118,36 @@
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
+
+  const homeMenuToggle = select('.hm-menu-toggle')
+  if (homeMenuToggle) {
+    const homeNav = homeMenuToggle.closest('nav')
+    const homeMenuIcon = homeMenuToggle.querySelector('.bi')
+    const setHomeMenu = (open) => {
+      homeMenuToggle.setAttribute('aria-expanded', String(open))
+      homeMenuIcon.classList.toggle('bi-list', !open)
+      homeMenuIcon.classList.toggle('bi-x', open)
+    }
+
+    homeMenuToggle.addEventListener('click', () => {
+      setHomeMenu(homeMenuToggle.getAttribute('aria-expanded') !== 'true')
+    })
+    document.addEventListener('click', (event) => {
+      if (homeMenuToggle.getAttribute('aria-expanded') !== 'true') return
+      const link = event.target.closest('#hm-menu-links a')
+      if (link || !homeNav.contains(event.target)) {
+        setHomeMenu(false)
+        if (link && link.hash && link.classList.contains('scrollto')) homeMenuToggle.focus()
+      }
+    })
+    homeNav.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && homeMenuToggle.getAttribute('aria-expanded') === 'true') {
+        setHomeMenu(false)
+        homeMenuToggle.focus()
+      }
+    })
+    window.matchMedia('(max-width: 991px)').addEventListener('change', () => setHomeMenu(false))
+  }
 
   /**
    * Mobile nav dropdowns activate
