@@ -63,7 +63,7 @@
 
 /* Connect band */
 .hm-connect { background:#191c1f; color:#fff; padding:56px 0; text-align:center; }
-.hm-connect h2 { color:#fff; font-size:30px; margin:0 0 12px; }
+.hm-connect h2 { color:#fff; font-size:30px; margin:0 0 24px; }
 .hm-connect p { color:rgba(255,255,255,.8); max-width:640px; margin:0 auto 22px; line-height:1.7; }
 .hm-connect .hm-cta { justify-content:center; }
 
