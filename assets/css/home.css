@@ -189,3 +189,7 @@
   .hm-section { padding:44px 0; }
   .rs-head h1 { font-size:30px; }
 }
+
+/* Resume sidebar links: readable on white */
+.rs-side a { color:#191c1f; text-decoration:underline; text-decoration-color:#ffb727; text-underline-offset:3px; }
+.rs-side a:hover { color:#b37a00; }
