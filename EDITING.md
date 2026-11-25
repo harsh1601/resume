@@ -48,16 +48,16 @@ In the order a visitor sees it.
 | Top bar (small screens) | Name and title shown after scrolling | `hm-header-identity` | 194 |
 | Hero: title line | "Vice President – Technology at GSTN" | `hm-eyebrow` | 220 |
 | Hero: positioning line | "Leading technology organizations that build and evolve..." | `hm-positioning` | 224 |
-| Hero: intro paragraph | "25 years across government and industry..." | `hm-lead` | 225 |
-| Hero: buttons | See my work / Read my essays / Full resume | `hm-cta` | 226 |
-| Four proof numbers | 1.4 crore, 300,000+, 30 million, 250+ and their captions | `class="hm-metric"` | 239–242 |
-| Note under the numbers | "Figures are from publicly available information..." | `hm-note` | 244 |
-| What I Lead | Four tiles: Technology Strategy & Architecture, Organisations & Delivery, Ecosystems & Interoperability, Governance & Stakeholders | `<h2>What I Lead</h2>` | 247–272 |
-| Platforms I Have Built and Led | Four cards: GST System, e-Invoicing, Passport Seva, Telecom O/BSS (each has a short outcome line) | `<h2>Platforms I Have Built` | 275–309 |
-| Recent Essays | Two article cards (title, date, summary) | `<h2>Recent Essays</h2>` | 312–334 |
-| Areas of Interest & Recent Keynote | Three interest tiles on the left; keynote card (thumbnail, title, YouTube and LinkedIn buttons) on the right; "Views are my own..." line below | `<h2>Areas of Interest`, `hm-feature`, `hm-disclaimer` | 337–370 |
-| Education & Certifications | Degrees, then four certification links | `<h2>Education &amp; Certifications` | 373–392 |
-| Let's Connect | Heading, LinkedIn and Download CV buttons | `<h2>Let's Connect` | 394–406 |
+| Hero: intro lines (experience, GSTN role, API ecosystem line) | "My experience spans 25 years..." | `hm-lead` | 225–229 |
+| Hero: buttons | See my work / Read my essays / Full resume | `hm-cta` | 230 |
+| Four proof numbers | 1.4 crore, 300,000+, 30 million, 250+ and their captions | `class="hm-metric"` | 243–246 |
+| Note under the numbers | "Figures are from publicly available information..." | `hm-note` | 248 |
+| What I Lead | Four tiles: Technology Strategy & Architecture, Organisations & Delivery, Ecosystems & Interoperability, Business Process Engineering | `<h2>What I Lead</h2>` | 252–287 |
+| Programmes I’ve Shaped and Delivered | Four cards: GST System, e-Invoicing and GST API Ecosystem, Passport Seva, Telecom O/BSS (each has an outcome line) | `<h2>Programmes I’ve Shaped` | 288–324 |
+| Recent Essays | Two article cards (title, date, summary) | `<h2>Recent Essays</h2>` | 325–349 |
+| Areas of Interest & Recent Keynote | Three interest tiles on the left; keynote card (thumbnail, title, YouTube and LinkedIn buttons) on the right; "Views are my own..." line below | `<h2>Areas of Interest`, `hm-feature`, `hm-disclaimer` | 350–385 |
+| Education & Certifications | Degrees, then four certification links | `<h2>Education &amp; Certifications` | 386–406 |
+| Let's Connect | Heading, LinkedIn and Download CV buttons | `<h2>Let's Connect` | 407–416 |
 
 **Keynote card links:** search for `youtu.be/COU5Mw4KwME` (YouTube) and `lnkd.in/p/gJVEFADy` (LinkedIn post). The thumbnail is `assets/img/keynote-transforming-risk-trusted-data.jpg`.
 
