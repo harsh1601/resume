@@ -4,6 +4,10 @@
 .hm-page { background:#fff; padding-bottom:88px; }
 .hm-page #main { overflow:hidden; }
 .hm-home { padding-bottom:0; }
+.hm-home :is(.hm-lead, .hm-card p, .hm-outcome) {
+  text-align:justify;
+  hyphens:auto;
+}
 .hm-home #header { height:auto; min-height:60px; background:#191c1f; border-bottom:1px solid #35393d; }
 .hm-home #navbar { position:relative !important; }
 .hm-home #navbar ul { display:flex; flex-wrap:wrap; justify-content:center; }
