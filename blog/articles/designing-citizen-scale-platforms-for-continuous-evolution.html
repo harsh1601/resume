@@ -61,6 +61,7 @@
   <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../../assets/css/style.css?v=20260824-article-width" rel="stylesheet">
+  <link href="../../assets/css/home.css?v=7" rel="stylesheet">
   <style>
     .article-lead {
       color: #3b434a;
@@ -186,19 +187,25 @@
   <link href="../../assets/css/comments.css?v=20261117-3" rel="stylesheet">
 </head>
 
-<body class="blog-page article-page">
+<body class="blog-page article-page hm-home">
 
-  <header id="header" class="fixed-bottom d-flex justify-content-center align-items-center header-scrolled">
-    <nav id="navbar" class="navbar">
-      <ul>
+  <header id="header" class="sticky-top d-flex justify-content-center align-items-center header-scrolled hm-identity-scrolled">
+    <nav id="navbar" class="navbar" aria-label="Primary">
+      <div class="hm-header-identity">
+        <strong>Harsh Agarwal</strong>
+        <span>Vice President &ndash; Technology at GSTN</span>
+      </div>
+      <button class="hm-menu-toggle" type="button" aria-label="Navigation menu" aria-controls="hm-menu-links" aria-expanded="false">
+        <span class="bi bi-list" aria-hidden="true"></span>
+      </button>
+      <ul id="hm-menu-links">
         <li><a class="bi bi-bank2 nav-link" title="Home" href="../../">Home</a></li>
         <li><a class="bi bi-diagram-3-fill nav-link" title="Selected work" href="../../#work">Work</a></li>
         <li><a class="bi bi-mic-fill nav-link" title="Speaking and advisory" href="../../#speaking">Speaking</a></li>
-        <li><a class="bi bi-journal-text nav-link active" title="Blog" href="../">Blog</a></li>
-        <li><a class="bi bi-stack nav-link" title="Resume" href="../../resume/">Resume</a></li>
+        <li><a class="bi bi-journal-text nav-link active" title="Articles" href="../../blog/">Blog</a></li>
+        <li><a class="bi bi-stack nav-link" title="Full resume" href="../../resume/">Resume</a></li>
         <li><a class="bi bi-linkedin nav-link" title="LinkedIn Profile" href="https://www.linkedin.com/in/agrharsh" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
   </header>
 
@@ -406,7 +413,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/js/main.js?v=20260824-share-menu"></script>
+  <script src="../../assets/js/main.js?v=4-share-menu"></script>
   <script src="../../assets/js/comments-config.js?v=20261117"></script>
   <script src="../../assets/js/comments.js?v=20261117-2" defer></script>
 </body>

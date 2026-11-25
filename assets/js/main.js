@@ -150,11 +150,15 @@
 
     const heroIdentity = select('.hm-hero .hm-identity')
     const headerHeight = selectHeader.offsetHeight
+    if (!heroIdentity) {
+      selectHeader.classList.add('hm-identity-scrolled')
+    } else {
     const identityObserver = new IntersectionObserver(([entry]) => {
       const scrolledPastIdentity = !entry.isIntersecting && entry.boundingClientRect.top < headerHeight
       selectHeader.classList.toggle('hm-identity-scrolled', scrolledPastIdentity)
     }, { rootMargin: `-${headerHeight}px 0px 0px` })
     identityObserver.observe(heroIdentity)
+    }
   }
 
   /**
