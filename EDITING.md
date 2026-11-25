@@ -48,7 +48,7 @@ In the order a visitor sees it.
 | Top bar (small screens) | Name and title shown after scrolling | `hm-header-identity` | 194 |
 | Hero: title line | "Vice President – Technology at GSTN" | `hm-eyebrow` | 220 |
 | Hero: positioning line | "Leading technology organizations that build and evolve..." | `hm-positioning` | 224 |
-| Hero: intro paragraph | "Twenty-five years across government and industry..." | `hm-lead` | 225 |
+| Hero: intro paragraph | "25 years across government and industry..." | `hm-lead` | 225 |
 | Hero: buttons | See my work / Read my essays / Full resume | `hm-cta` | 226 |
 | Four proof numbers | 1.4 crore, 300,000+, 30 million, 250+ and their captions | `class="hm-metric"` | 239–242 |
 | Note under the numbers | "Figures are from publicly available information..." | `hm-note` | 244 |
@@ -143,12 +143,27 @@ If you change one of these, search for the old value and update every file liste
 | Fact | Search for | Files |
 |---|---|---|
 | Job title: Vice President – Technology | `Technology at GSTN`, `Vice President &ndash; Technology`, `Vice President - Technology` | `index.html` (header, hero, structured data), `resume/index.html`, `blog/index.html`, both articles, `blog/articles/template.html` |
-| 25 years of experience | `25 years`, `Twenty-five years` | `index.html` (search text, hero, structured data), `resume/index.html` |
-| The four proof numbers | `1.4 crore`, `300,000`, `30 million`, `250+` | `index.html` (numbers, GST cards), `resume/index.html` (GSTN bullets) |
+| 25 years of experience (always digits) | `25 years` | `index.html` (search text, hero, structured data), `resume/index.html` |
+| The proof numbers: 1.4 crore taxpayers, 3 lakh+ concurrent users, 250+ integrations (and 30 million e-invoices a day) | `1.4 crore`, `3 lakh`, `250+`, `30 million` | `index.html` (numbers, GST cards), `resume/index.html` (GSTN bullets) |
 | 167-member cross-shore teams | `167` | `index.html` (Organisations & Delivery tile), `resume/index.html` (Aricent bullet) |
 | Education and certifications | `IMT Ghaziabad`, `Certified SAFe` | `index.html` (credentials and structured data), `resume/index.html` |
 | LinkedIn address | `linkedin.com/in/agrharsh` | every page (top bar and buttons) |
-| CV file | `Harsh_Agarwal.pdf` | `index.html`, `resume/index.html` |
+| CV file (every Download CV link uses this name) | `Harsh_Agarwal.pdf` | `index.html`, `resume/index.html` |
+
+**The CV itself is also a place where these facts live.** The PDF at `assets/Harsh_Agarwal.pdf` is exported from your Word resume. When any fact above changes, update the Word file, export a new PDF from Word, and replace the PDF in `assets/`. Replace `assets/Harsh Agarwal.pdf` (with a space) with the same file.
+
+### Agreed facts (single reference)
+
+| Fact | Exact wording |
+|---|---|
+| Job title | Vice President – Technology |
+| Experience | 25 years (digits, never in words) |
+| Taxpayers | 1.4 crore |
+| Concurrent users | 3 lakh+ (from 60,000 in 2017) |
+| Integrations | 250+ |
+| Cross-shore teams | 167-member cross-shore teams |
+| Education | PG Diploma in Management (Business Analytics), IMT Ghaziabad, completing Dec 2026 |
+| CV download file | `Harsh_Agarwal.pdf` |
 
 ---
 
