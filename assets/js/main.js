@@ -147,6 +147,14 @@
       }
     })
     window.matchMedia('(max-width: 991px)').addEventListener('change', () => setHomeMenu(false))
+
+    const heroIdentity = select('.hm-hero .hm-identity')
+    const headerHeight = selectHeader.offsetHeight
+    const identityObserver = new IntersectionObserver(([entry]) => {
+      const scrolledPastIdentity = !entry.isIntersecting && entry.boundingClientRect.top < headerHeight
+      selectHeader.classList.toggle('hm-identity-scrolled', scrolledPastIdentity)
+    }, { rootMargin: `-${headerHeight}px 0px 0px` })
+    identityObserver.observe(heroIdentity)
   }
 
   /**
