@@ -193,3 +193,6 @@
 /* Resume sidebar links: readable on white */
 .rs-side a { color:#191c1f; text-decoration:underline; text-decoration-color:#ffb727; text-underline-offset:3px; }
 .rs-side a:hover { color:#b37a00; }
+
+/* Sticky header: keep in-page anchors clear of it on every page */
+.hm-home [id] { scroll-margin-top:84px; }

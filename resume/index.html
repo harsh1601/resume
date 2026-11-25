@@ -61,7 +61,7 @@
 
   <!-- Main CSS -->
   <link href="../assets/css/style.css?v=20261125" rel="stylesheet">
-  <link href="../assets/css/home.css?v=20261125" rel="stylesheet">
+  <link href="../assets/css/home.css?v=7" rel="stylesheet">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -74,19 +74,25 @@
   </script>
 </head>
 
-<body class="hm-page">
+<body class="hm-page hm-home">
 
-  <header id="header" class="fixed-bottom d-flex justify-content-center align-items-center header-scrolled">
-    <nav id="navbar" class="navbar">
-      <ul>
+  <header id="header" class="sticky-top d-flex justify-content-center align-items-center header-scrolled hm-identity-scrolled">
+    <nav id="navbar" class="navbar" aria-label="Primary">
+      <div class="hm-header-identity">
+        <strong>Harsh Agarwal</strong>
+        <span>Vice President &ndash; Technology at GSTN</span>
+      </div>
+      <button class="hm-menu-toggle" type="button" aria-label="Navigation menu" aria-controls="hm-menu-links" aria-expanded="false">
+        <span class="bi bi-list" aria-hidden="true"></span>
+      </button>
+      <ul id="hm-menu-links">
         <li><a class="bi bi-bank2 nav-link" title="Home" href="../">Home</a></li>
         <li><a class="bi bi-diagram-3-fill nav-link" title="Selected work" href="../#work">Work</a></li>
         <li><a class="bi bi-mic-fill nav-link" title="Speaking and advisory" href="../#speaking">Speaking</a></li>
         <li><a class="bi bi-journal-text nav-link" title="Articles" href="../blog/">Blog</a></li>
-        <li><a class="bi bi-stack nav-link active" title="Full resume" href="./">Resume</a></li>
+        <li><a class="bi bi-stack nav-link active" title="Full resume" href="../resume/">Resume</a></li>
         <li><a class="bi bi-linkedin nav-link" title="LinkedIn Profile" href="https://www.linkedin.com/in/agrharsh" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
   </header>
 
@@ -95,7 +101,7 @@
       <div class="container">
         <p class="hm-eyebrow">Resume</p>
         <h1>Harsh Agarwal</h1>
-        <p>Vice President &ndash; Architecture, Goods &amp; Services Tax Network. Twenty-five years leading technology architecture, delivery and teams for citizen-scale platforms across government and industry. The CV download has full detail and contact information.</p>
+        <p>Vice President &ndash; Technology, Goods &amp; Services Tax Network. Twenty-five years leading technology, architecture, delivery and teams for citizen-scale platforms across government and industry. The CV download has full detail and contact information.</p>
         <div class="hm-cta">
           <a class="hm-btn hm-btn-primary" href="../assets/Harsh_Agarwal.pdf" download>Download CV</a>
           <a class="hm-btn hm-btn-ghost" href="https://www.linkedin.com/in/agrharsh" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -110,7 +116,7 @@
             <div class="section-title"><span>Experience</span><h2>Career Highlights</h2></div>
 
             <div class="rs-role">
-              <h3>Vice President &ndash; Architecture, Goods &amp; Services Tax Network (GSTN)</h3>
+              <h3>Vice President &ndash; Technology, Goods &amp; Services Tax Network (GSTN)</h3>
               <p class="rs-meta">2016 to present &middot; Associate Vice President, then Vice President</p>
               <ul>
                 <li>Architecture lead for the GST System, India's largest indirect tax platform: 1.4 crore taxpayers, 300,000+ concurrent users (from 60,000 in 2017), about 30 million e-invoices a day.</li>
@@ -127,7 +133,7 @@
               <h3>Senior Project Manager, Aricent Technologies</h3>
               <p class="rs-meta">Jan 2012 to Jun 2016 &middot; Telecom OSS/BSS</p>
               <ul>
-                <li>Led solution delivery for a programme worth $4.5M+ ACV with a 47-member cross-shore team.</li>
+                <li>Led solution delivery for a programme worth $4.5M+ ACV with 167-member cross-shore teams.</li>
                 <li>Moved execution to Scrum-based continuous delivery; raised customer satisfaction from 3/5 to 5/5 in 18 months.</li>
                 <li>Added USD 1.3M of new business in 2014-15 by productising the solution for new geographies.</li>
                 <li>Contained attrition through a "Skill Seeding" people-growth programme.</li>
@@ -201,7 +207,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/main.js?v=4"></script>
 </body>
 
 </html>
