@@ -11,8 +11,8 @@ The site is plain HTML. There is no build step: edit a file, save, and the chang
 | "What I Lead" tiles | `index.html` | `<section id="lead"` |
 | Selected work cards | `index.html` | `<section id="work"` |
 | Essays on the home page | `index.html` | `<section id="perspectives"` |
-| Speaking topics and forums | `index.html` | `<section id="speaking"` |
-| Recent keynote (thumbnail, YouTube and LinkedIn links) | `index.html` | `<article class="hm-feature">` in the speaking section; image in `assets/img/` |
+| Areas of interest tiles | `index.html` | `<ul class="hm-topics">` in the speaking section |
+| Recent keynote (thumbnail, YouTube and LinkedIn links) | `index.html` | `<article class="hm-feature">` beside the areas of interest; image in `assets/img/` |
 | Credentials | `index.html` | `<section id="credentials"` |
 | Contact / LinkedIn band | `index.html` | `<section id="connect"` |
 | Full resume | `resume/index.html` | role blocks marked `rs-role` |
