@@ -155,6 +155,10 @@ If you change one of these, search for the old value and update every file liste
 
 **Search and sharing text.** If you change the homepage `<title>`, also update the matching line in `.github/workflows/seo-health-check.yml` (the weekly check looks for the exact title). Current titles: Home "Harsh Agarwal | Vice President – Technology, GSTN"; Resume "Resume | Harsh Agarwal, Vice President – Technology, GSTN"; Blog "Essays on DPI, Interoperability and Platform Architecture | Harsh Agarwal". Keep titles under about 60 characters and descriptions under about 160. After changing a page, update its `lastmod` date in `sitemap.xml` and `dateModified` in its structured data.
 
+**Keynote in search results.** The homepage structured data holds a `VideoObject` for the keynote (search for `keynote-video`): event SamvAAd 2026, Mumbai, 15 October 2026. Its `uploadDate` is set to the event date. If the YouTube upload date differs, change it. Google only shows video results for a video that plays on the page itself, so the card's YouTube link will not trigger one; the markup still helps Google understand the keynote.
+
+**Fonts.** Pages load only the weights in use: Open Sans 400, 600, 700 and Raleway 500, 600, 700. If you use a new weight or italic text, add it to the Google Fonts link in every page's `<head>` (search for `fonts.googleapis.com`).
+
 **Images for link previews** should be JPEG, 1200 pixels wide and under about 300 KB, otherwise WhatsApp and some apps skip the preview.
 
 **The CV itself is also a place where these facts live.** The PDF at `assets/Harsh_Agarwal.pdf` is exported from your Word resume (see `CV-CORRECTIONS.md` for the list of Word changes needed). When any fact above changes, update the Word file, export a new PDF from Word, and replace the PDF in `assets/`. Replace `assets/Harsh Agarwal.pdf` (with a space) with the same file.
