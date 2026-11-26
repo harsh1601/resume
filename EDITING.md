@@ -58,7 +58,7 @@ In the order a visitor sees it.
 | Areas of Leadership | Four tiles: Technology Strategy & Architecture, Organisations & Delivery, Ecosystems & Interoperability, Business Process Engineering | `<h2>Areas of Leadership</h2>` | 252–287 |
 | Selected Programmes | Four cards: GST System, e-Invoicing and GST API Ecosystem, Passport Seva, Telecom O/BSS (each has an outcome line; GST System carries the scale figures, e-Invoicing the 1.2 crore, 99.9% and 30 ms figures) | `<h2>Selected Programmes` | 288–324 |
 | Recent Essays | Two article cards (title, date, summary) | `<h2>Recent Essays</h2>` | 325–349 |
-| Areas of Interest | Three interest tiles on the left; keynote card (thumbnail, title, YouTube and LinkedIn buttons) on the right; "Views expressed are personal..." line below | `<h2>Areas of Interest`, `hm-feature`, `hm-disclaimer` | 350–385 |
+| Areas of Interest (menu: Interests; opportunities Harsh wants to take up) | Four interest tiles on the left; keynote card (thumbnail, title, YouTube and LinkedIn buttons) on the right; "Views expressed are personal..." line below | `<h2>Areas of Interest`, `hm-feature`, `hm-disclaimer` | 350–385 |
 | Education & Certifications | Degrees, then four certification links | `<h2>Education &amp; Certifications` | 386–406 |
 | Let's Connect | Heading, LinkedIn and Download CV buttons | `<h2>Let's Connect` | 407–416 |
 
