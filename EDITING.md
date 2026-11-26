@@ -153,6 +153,10 @@ If you change one of these, search for the old value and update every file liste
 | LinkedIn address | `linkedin.com/in/agrharsh` | every page (top bar and buttons) |
 | CV file (every Download CV link uses this name) | `Harsh_Agarwal.pdf` | `index.html`, `resume/index.html` |
 
+**Search and sharing text.** If you change the homepage `<title>`, also update the matching line in `.github/workflows/seo-health-check.yml` (the weekly check looks for the exact title). Current titles: Home "Harsh Agarwal | Vice President – Technology, GSTN"; Resume "Resume | Harsh Agarwal, Vice President – Technology, GSTN"; Blog "Essays on DPI, Interoperability and Platform Architecture | Harsh Agarwal". Keep titles under about 60 characters and descriptions under about 160. After changing a page, update its `lastmod` date in `sitemap.xml` and `dateModified` in its structured data.
+
+**Images for link previews** should be JPEG, 1200 pixels wide and under about 300 KB, otherwise WhatsApp and some apps skip the preview.
+
 **The CV itself is also a place where these facts live.** The PDF at `assets/Harsh_Agarwal.pdf` is exported from your Word resume (see `CV-CORRECTIONS.md` for the list of Word changes needed). When any fact above changes, update the Word file, export a new PDF from Word, and replace the PDF in `assets/`. Replace `assets/Harsh Agarwal.pdf` (with a space) with the same file.
 
 ### Agreed facts (single reference)

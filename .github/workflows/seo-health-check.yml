@@ -14,7 +14,7 @@ jobs:
           set -euo pipefail
           curl -fsSL https://agrharsh.com/ -o index.html
           curl -fsSL https://agrharsh.com/resume/ | grep -q '<link rel="canonical" href="https://agrharsh.com/resume/">'
-          grep -q '<title>Harsh Agarwal | Technology Executive &amp; Digital Public Infrastructure Architect</title>' index.html
+          grep -q '<title>Harsh Agarwal | Vice President – Technology, GSTN</title>' index.html
           grep -q '<link rel="canonical" href="https://agrharsh.com/">' index.html
           grep -q '<script type="application/ld+json">' index.html
           grep -q 'Digital Public Infrastructure' index.html
