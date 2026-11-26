@@ -33,7 +33,10 @@ The site is plain HTML. There is no build step: edit a file, save, and the chang
 - **Titles and headings** (hero positioning line, card titles, article headings): Title Case. Small words (a, an, and, of, in, the, to, for, with) stay lower case unless first.
 - **Everything else** (paragraphs, bullets, captions, links such as "Read article"): sentence case.
 - Button labels display in CAPITALS automatically. Type them in sentence case.
-- Spelling: the site currently mixes British ("organisation", "programme") and American ("organizations", in the new hero line). Choose one and apply it everywhere.
+- Spelling: British throughout ("organisation", "programme", "modernise"). Keep the schema.org type name `Organization` in structured data as it is.
+- Voice: the hero and tiles avoid "I" and "my" (implied subject, for example "At GSTN, leads..."). On the resume, completed work is in past tense and current duties in present tense.
+- Full stops: every card description, outcome line and resume bullet ends with one.
+- Dates: "2016 – Present", "Jan 2012 – Jun 2016" (type `&ndash;`).
 
 ---
 
@@ -47,15 +50,15 @@ In the order a visitor sees it.
 | (not visible) Structured data for search engines | Name, job title, description, certifications | `"jobTitle"`, `"description"` | 82–180 |
 | Top bar (small screens) | Name and title shown after scrolling | `hm-header-identity` | 194 |
 | Hero: title line | "Vice President – Technology at GSTN" | `hm-eyebrow` | 220 |
-| Hero: positioning line | "Leading technology organizations that build and evolve..." | `hm-positioning` | 224 |
-| Hero: intro lines (experience, GSTN role, API ecosystem line) | "My experience spans 25 years..." | `hm-lead` | 225–229 |
-| Hero: buttons | See my work / Read my essays / Full resume | `hm-cta` | 230 |
-| Four proof numbers | 1.4 crore, 300,000+, 30 million, 250+ and their captions | `class="hm-metric"` | 243–246 |
-| Note under the numbers | "Figures are from publicly available information..." | `hm-note` | 248 |
-| What I Lead | Four tiles: Technology Strategy & Architecture, Organisations & Delivery, Ecosystems & Interoperability, Business Process Engineering | `<h2>What I Lead</h2>` | 252–287 |
-| Programmes I’ve Shaped and Delivered | Four cards: GST System, e-Invoicing and GST API Ecosystem, Passport Seva, Telecom O/BSS (each has an outcome line) | `<h2>Programmes I’ve Shaped` | 288–324 |
+| Hero: positioning line (Title Case) | "Leading Technology Organisations That Build and Evolve..." | `hm-positioning` | 224 |
+| Hero: intro lines (experience, GSTN role, API ecosystem line) | "25 years of experience across government and industry..." | `hm-lead` | 225–229 |
+| Hero: buttons | Selected work / Read the essays / Full resume | `hm-cta` | 230 |
+| Four proof numbers | 5 lakh concurrency, 250+ integrations, 167 team members, $6.5M+ ACV, with captions | `class="hm-metric"` | 243–246 |
+| Note under the numbers | "Concurrency and integration figures relate to the GST System..." | `hm-note` | 248 |
+| Areas of Leadership | Four tiles: Technology Strategy & Architecture, Organisations & Delivery, Ecosystems & Interoperability, Business Process Engineering | `<h2>Areas of Leadership</h2>` | 252–287 |
+| Selected Programmes | Four cards: GST System, e-Invoicing and GST API Ecosystem, Passport Seva, Telecom O/BSS (each has an outcome line; GST System carries the scale figures, e-Invoicing the 1.2 crore, 99.9% and 30 ms figures) | `<h2>Selected Programmes` | 288–324 |
 | Recent Essays | Two article cards (title, date, summary) | `<h2>Recent Essays</h2>` | 325–349 |
-| Areas of Interest & Recent Keynote | Three interest tiles on the left; keynote card (thumbnail, title, YouTube and LinkedIn buttons) on the right; "Views are my own..." line below | `<h2>Areas of Interest`, `hm-feature`, `hm-disclaimer` | 350–385 |
+| Areas of Interest | Three interest tiles on the left; keynote card (thumbnail, title, YouTube and LinkedIn buttons) on the right; "Views expressed are personal..." line below | `<h2>Areas of Interest`, `hm-feature`, `hm-disclaimer` | 350–385 |
 | Education & Certifications | Degrees, then four certification links | `<h2>Education &amp; Certifications` | 386–406 |
 | Let's Connect | Heading, LinkedIn and Download CV buttons | `<h2>Let's Connect` | 407–416 |
 
@@ -69,14 +72,14 @@ In the order a visitor sees it.
 |---|---|---|
 | Tab title and search description | `<title>`, `name="description"` | 18–19 |
 | Dark header: intro sentence and buttons | `rs-head` | 100 |
-| Career Highlights: GSTN role | `Vice President &ndash; Technology, Goods` | 119 |
+| Career Highlights: GSTN role (six bullets) | `Vice President &ndash; Technology, Goods` | 119 |
 | Aricent role | `Senior Project Manager, Aricent` | 133 |
 | HCL role | `Associate Project Manager, HCL` | 144 |
 | TCS role (Passport Seva, Melbourne) | `IT Analyst, Tata Consultancy` | 152 |
 | Early career | `Developer, SOWSIA` | 161 |
 | Right column: Education | `<h4>Education</h4>` | 167 |
 | Right column: Certifications | `<h4>Certifications</h4>` | 173 |
-| Right column: Domains, Technology, Leadership | `<h4>Domains</h4>`, `<h4>Technology</h4>`, `<h4>Leadership</h4>` | 180–194 |
+| Right column: Domains, Technology (includes AWS and GCP, blue/green), Leadership | `<h4>Domains</h4>`, `<h4>Technology</h4>`, `<h4>Leadership</h4>` | 180–194 |
 
 Each job is a block of: title line (`<h3>`), dates line (`rs-meta`), then bullets (`<li>`). To add a bullet, copy an existing `<li>...</li>` line.
 
@@ -144,13 +147,13 @@ If you change one of these, search for the old value and update every file liste
 |---|---|---|
 | Job title: Vice President – Technology | `Technology at GSTN`, `Vice President &ndash; Technology`, `Vice President - Technology` | `index.html` (header, hero, structured data), `resume/index.html`, `blog/index.html`, both articles, `blog/articles/template.html` |
 | 25 years of experience (always digits) | `25 years` | `index.html` (search text, hero, structured data), `resume/index.html` |
-| The proof numbers: 1.4 crore taxpayers, 3 lakh+ concurrent users, 250+ integrations (and 30 million e-invoices a day) | `1.4 crore`, `3 lakh`, `250+`, `30 million` | `index.html` (numbers, GST cards), `resume/index.html` (GSTN bullets) |
-| 167-member cross-shore teams | `167` | `index.html` (Organisations & Delivery tile), `resume/index.html` (Aricent bullet) |
+| GST System scale: 1.6 crore active taxpayers, concurrency 1.5 → 3 → 5 lakh, 250+ integrations, 1.2 crore e-invoices a day, 99.9% uptime, 30 ms lookup | `1.6 crore`, `5 lakh`, `250+`, `1.2 crore`, `99.9%` | `index.html` (numbers strip, GST and e-invoicing cards), `resume/index.html` (first two GSTN bullets) |
+| 167-member cross-shore teams; Aricent ACV $6.5M+ | `167`, `6.5M` | `index.html` (numbers strip, Organisations & Delivery tile, Aricent card), `resume/index.html` (Aricent bullet) |
 | Education and certifications | `IMT Ghaziabad`, `Certified SAFe` | `index.html` (credentials and structured data), `resume/index.html` |
 | LinkedIn address | `linkedin.com/in/agrharsh` | every page (top bar and buttons) |
 | CV file (every Download CV link uses this name) | `Harsh_Agarwal.pdf` | `index.html`, `resume/index.html` |
 
-**The CV itself is also a place where these facts live.** The PDF at `assets/Harsh_Agarwal.pdf` is exported from your Word resume. When any fact above changes, update the Word file, export a new PDF from Word, and replace the PDF in `assets/`. Replace `assets/Harsh Agarwal.pdf` (with a space) with the same file.
+**The CV itself is also a place where these facts live.** The PDF at `assets/Harsh_Agarwal.pdf` is exported from your Word resume (see `CV-CORRECTIONS.md` for the list of Word changes needed). When any fact above changes, update the Word file, export a new PDF from Word, and replace the PDF in `assets/`. Replace `assets/Harsh Agarwal.pdf` (with a space) with the same file.
 
 ### Agreed facts (single reference)
 
@@ -158,9 +161,12 @@ If you change one of these, search for the old value and update every file liste
 |---|---|
 | Job title | Vice President – Technology |
 | Experience | 25 years (digits, never in words) |
-| Taxpayers | 1.4 crore |
-| Concurrent users | 3 lakh+ (from 60,000 in 2017) |
+| Active taxpayers | 1.6 crore |
+| Concurrent users | Scaled from 1.5 lakh to 3 lakh and now 5 lakh |
+| Peak load | 45.43 lakh return transactions in a single day; 7.65 lakh returns and 1.8 lakh payments a day in peak filing periods |
 | Integrations | 250+ |
+| e-Invoicing | 1.2 crore a day on average; 99.9% uptime; 30 ms average lookup response time |
+| Aricent programme | $6.5M+ ACV; $1.3M new business; satisfaction 3/5 to 5/5 in 18 months |
 | Cross-shore teams | 167-member cross-shore teams |
 | Education | PG Diploma in Management (Business Analytics), IMT Ghaziabad, completing Dec 2026 |
 | CV download file | `Harsh_Agarwal.pdf` |
