@@ -58,6 +58,7 @@
   <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../../assets/css/style.css?v=20260824-article-width" rel="stylesheet">
+  <link href="../../assets/css/home.css?v=11" rel="stylesheet">
 
   <script type="application/ld+json">
     {
@@ -137,19 +138,25 @@
   <link href="../../assets/css/comments.css?v=20261117-3" rel="stylesheet">
 </head>
 
-<body class="blog-page article-page">
+<body class="blog-page article-page hm-home">
 
-  <header id="header" class="fixed-bottom d-flex justify-content-center align-items-center header-scrolled">
-    <nav id="navbar" class="navbar">
-      <ul>
+  <header id="header" class="sticky-top d-flex justify-content-center align-items-center header-scrolled hm-identity-scrolled">
+    <nav id="navbar" class="navbar" aria-label="Primary">
+      <div class="hm-header-identity">
+        <strong>Harsh Agarwal</strong>
+        <span>Vice President &ndash; Technology at GSTN</span>
+      </div>
+      <button class="hm-menu-toggle" type="button" aria-label="Navigation menu" aria-controls="hm-menu-links" aria-expanded="false">
+        <span class="bi bi-list" aria-hidden="true"></span>
+      </button>
+      <ul id="hm-menu-links">
         <li><a class="bi bi-bank2 nav-link" title="Home" href="../../">Home</a></li>
-        <li><a class="bi bi-stack nav-link" title="Resume" href="../../#resume">Resume</a></li>
-        <li><a class="bi bi-journal-text nav-link active" title="Blog" href="../">Blog</a></li>
-        <li><a class="bi bi-chat-text-fill nav-link" title="Contact Details" href="../../#contact">Contact</a></li>
-        <li><a class="bi bi-linkedin nav-link" title="LinkedIn Profile" style="color: #ffb459;" href="https://www.linkedin.com/in/agrharsh" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a class="bi bi-cloud-download-fill nav-link" style="color: #ffb459;" href="../../assets/Harsh_Agarwal.pdf" title="Resume Download" download>Download CV</a></li>
+        <li><a class="bi bi-diagram-3-fill nav-link" title="Selected work" href="../../#work">Work</a></li>
+        <li><a class="bi bi-bullseye nav-link" title="Areas of interest" href="../../#interests">Interests</a></li>
+        <li><a class="bi bi-journal-text nav-link active" title="Articles" href="../../blog/">Blog</a></li>
+        <li><a class="bi bi-stack nav-link" title="Full resume" href="../../resume/">Resume</a></li>
+        <li><a class="bi bi-linkedin nav-link" title="LinkedIn Profile" href="https://www.linkedin.com/in/agrharsh" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
   </header>
 
@@ -217,10 +224,10 @@
           <p>Close with the key takeaway and, where useful, a question for readers to consider.</p>
         </div>
         <section id="comments" class="article-comments" data-blog-comments aria-labelledby="comments-heading">
-          <h2 id="comments-heading">Join the conversation</h2>
+          <h2 id="comments-heading">Join the Conversation</h2>
           <p class="comment-intro">What is your perspective? Share a question, an experience or a different view. Comments are reviewed before they appear.</p>
           <form class="comment-form">
-            <h3>Leave a comment</h3>
+            <h3>Leave a Comment</h3>
             <div class="comment-fields">
               <div class="comment-field">
                 <label for="comment-name">Display name</label>
@@ -246,7 +253,7 @@
           <div data-comment-list aria-label="Reader comments"></div>
           <button class="comment-secondary" type="button" data-comment-retry hidden>Try again</button>
           <button class="comment-secondary" type="button" data-comment-more hidden>Load more comments</button>
-          <noscript><p>Please enable JavaScript to read or leave comments. You can also <a href="mailto:agrharsh@gmail.com">email Harsh</a>.</p></noscript>
+          <noscript><p>Please enable JavaScript to read or leave comments. You can also <a href="https://www.linkedin.com/in/agrharsh" rel="noopener noreferrer">message Harsh on LinkedIn</a>.</p></noscript>
         </section>
 
       </div>
@@ -262,7 +269,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/js/main.js?v=20260824-share-menu"></script>
+  <script src="../../assets/js/main.js?v=4-share-menu"></script>
   <script src="../../assets/js/comments-config.js?v=20261117"></script>
   <script src="../../assets/js/comments.js?v=20261117-2" defer></script>
 </body>
