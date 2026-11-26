@@ -9,6 +9,8 @@
   text-justify:inter-word;
   hyphens:none;
 }
+/* Narrow tiles read better left-aligned: justified text leaves wide gaps */
+.hm-home .hm-pillar p { text-align:left; }
 .hm-home #header { height:auto; min-height:60px; background:#191c1f; border-bottom:1px solid #35393d; }
 .hm-home #navbar { position:relative !important; }
 .hm-home #navbar ul { display:flex; flex-wrap:wrap; justify-content:center; }
