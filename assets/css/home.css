@@ -17,7 +17,7 @@
 .hm-home #navbar a { letter-spacing:0; }
 .hm-menu-toggle, .hm-header-identity { display:none; }
 .hm-home #navbar :is(a, button):focus-visible { outline:2px solid #ffb727; outline-offset:-2px; }
-.hm-home #work, .hm-home #speaking { scroll-margin-top:96px; }
+.hm-home #work, .hm-home #interests { scroll-margin-top:96px; }
 .hm-home #top { scroll-margin-top:96px; }
 .hm-eyebrow { color:#ffb727; font-family:"Raleway",sans-serif; font-size:13px; font-weight:700; letter-spacing:1px; margin-bottom:12px; text-transform:uppercase; }
 
@@ -76,7 +76,7 @@
 .hm-card .blog-read-more { margin-top:auto; padding-top:6px; }
 .hm-more { display:inline-block; margin-top:22px; font-weight:700; font-size:14px; }
 
-/* Speaking */
+/* Areas of interest */
 .hm-topics { list-style:none; margin:0; padding:0; display:grid; gap:14px; height:100%; grid-auto-rows:1fr; }
 .hm-topics li { display:flex; flex-direction:column; justify-content:center; background:#fff; border:1px solid #dde1e4; border-left:3px solid #ffb727; border-radius:4px; padding:14px 18px; color:#191c1f; font-size:15.5px; line-height:1.5; }
 .hm-topics li strong { font-family:"Raleway",sans-serif; font-size:18px; font-weight:700; color:#191c1f; }
