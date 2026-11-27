@@ -1,0 +1,106 @@
+.blog-signup {
+  max-width: 920px;
+  margin: 0 auto 18px;
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 20px;
+  background: #f3f4f5;
+  color: #23282e;
+}
+
+.blog-signup h3 {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.blog-signup-copy p {
+  max-width: 44ch;
+  margin: 0;
+  font-size: 14px;
+  color: #525b63;
+}
+
+.blog-signup .formkit-form[data-format="inline"] {
+  border: 0;
+  margin: 0;
+  max-width: none;
+  width: 100%;
+  background-color: transparent !important;
+  font-family: inherit;
+}
+
+.blog-signup .blog-signup-embed .formkit-form[data-format="inline"] [data-style="minimal"] {
+  padding: 0;
+}
+
+.blog-signup .formkit-form [data-element="header"],
+.blog-signup .formkit-form [data-element="subheader"],
+.blog-signup .formkit-form [data-element="guarantee"] {
+  display: none;
+}
+
+.blog-signup .formkit-form .formkit-fields[data-stacked] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 8px;
+  margin: 0 !important;
+}
+
+.blog-signup .formkit-form .formkit-fields .formkit-field,
+.blog-signup .formkit-form .formkit-fields .formkit-submit {
+  min-width: 0;
+  margin: 0 !important;
+}
+
+.blog-signup .blog-signup-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #23282e;
+}
+
+.blog-signup .formkit-fields .formkit-input,
+.blog-signup .formkit-fields .formkit-submit {
+  height: 46px;
+  font-family: inherit;
+}
+
+.blog-signup .formkit-fields .formkit-input {
+  display: block;
+  padding: 8px 12px;
+}
+
+.blog-signup .formkit-fields .formkit-submit > span {
+  padding: 8px 14px;
+}
+
+.blog-signup .formkit-form .formkit-powered-by-convertkit-container {
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+.blog-signup .formkit-form .formkit-powered-by-convertkit-container .formkit-powered-by-convertkit {
+  margin: 0;
+}
+
+.blog-signup-fallback {
+  color: #23282e;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .blog-signup {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .blog-signup .formkit-form .formkit-fields[data-stacked] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
